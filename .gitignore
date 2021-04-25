@@ -1,39 +1,23 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
 .DS_Store
-node_modules
-/dist
-
-/tests/e2e/videos/
-/tests/e2e/screenshots/
-/test-results/
-selenium-debug.log
-
-# local env files
 .env.local
-.env.local.*
-.env.*.local
-cypress.env.json
-# Log files
+.env.development.local
+.env.test.local
+.env.production.local
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-# Editor directories and files
-.idea
-.vscode
-_vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
-
-/sunrise.iml
-/graphql.config.json
-/.graphqlconfig.yml
-
-# terraform files
-.terraform.lock.hcl
-terraform.tfstate
-terraform.tfstate.*
-terraform.tfvars
-Deploy/.terraform

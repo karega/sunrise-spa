@@ -1,59 +1,70 @@
-# SUNRISE as a Single-Page Application
+# Getting Started with Create React App
 
-[![CircleCI](https://circleci.com/gh/commercetools/sunrise-spa.svg?style=svg)](https://circleci.com/gh/commercetools/sunrise-spa)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Demo
-https://demo.commercetools.com
+## Available Scripts
 
-## Run it locally 
+In the project directory, you can run:
 
-Steps   | with [Yarn](https://yarnpkg.com/)  | with [NPM](https://www.npmjs.com/) |
-------- | ---------------------------------- | ---------------------------------- |
-Install | `yarn install`                     | `npm install`                      |
-Run     | `yarn serve`                       | `npm run serve`                    |
+### `yarn start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## How to use your own project data
-SUNRISE SPA comes with some read-only data set by default that you can use. But if you need to use a different set of data or to manage the project via [Merchant Center](https://mc.commercetools.com/), then you'll need to connect SUNRISE SPA to your own commercetools project.
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-Once you have created your commercetools project and populated it with data, follow the next steps to connect to it.
+### `yarn test`
 
-### 1. Create an API client for a SPA
-In the [Merchant Center](https://mc.commercetools.com/), select your project and go to the [New API Client](https://mc.commercetools.com/sunrise-spa-ci/settings/developer/api-clients/now) section (`Settings` > `Developer Settings` > `API Clients` > `Create New API Client`). Enter a descriptive name for your new API client and select the template `Mobile & single-page application client`. Once you have filled the form, submit it by clicking on `Create API Client`, you should now be able to see your project credentials. Don't close the window yet!
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-> **:warning: Always use an API client suited for single-page applications (SPA), as your credentials will be publicly accessible through the browser.**
+### `yarn build`
 
-### 2. Configure SUNRISE with your API client
-Below the credentials, you should see a dropdown with different technologies: select `Sunrise SPA` and click on the download button. This will download a file named `.env.local` with your credentials, which you should place in the root folder of your SUNRISE SPA project.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> **:warning: Make sure the downloaded file is called exactly `.env.local`, as browsers may remove the initial dot and apply further modifications to the filename.**
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-This will set up the necessary environment variables required to run SUNRISE SPA.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Development tips
+### `yarn eject`
 
-### Add any queried fields to the mutation
-When executing a mutation (e.g. to update the active cart), we receive as a response the updated resource, which Apollo then uses to update the cached data in Apollo store. It is thanks to this cache that all components are able to display the same information, even after mutations. 
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-But when we under-fetch in the mutation and fail to update some cached fields we are displaying in a component, this component will not be updated at all with any new data. To avoid that, make sure to add any field you are querying in the mutation. The update mutations are found in the methods `updateMyCart` and `updateMyCustomer`.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Related issue: https://github.com/apollographql/apollo-client/issues/3267
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Run tests
-The project has unit and end-to-end tests covering each functionality. Unit tests will run out of the box, but end-to-end tests require some further configuration, explained in the section below.
+## Learn More
 
-Test   | with [Yarn](https://yarnpkg.com/)  | with [NPM](https://www.npmjs.com/) |
-------- | ---------------------------------- | ---------------------------------- |
-Unit | `yarn test:unit`                     | `npm run test:unit`                      |
-End-to-end     | `yarn test:e2e`                       | `npm run test:e2e`                    |
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Configure end-to-end tests
-In order to continue, it is necessary that you have full control over the commercetools project associated with SUNRISE.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Follow the same steps explained in the section [How to use your own project data](#how-to-use-your-own-project-data) to create a second API client, but this time create it with the `Admin client` template instead. Then add your new client ID and secret as the following environment variables (e.g. in `.env.local` file): 
+### Code Splitting
 
-```shell
-CYPRESS_CT_CLIENT_ID=<your client ID>
-CYPRESS_CT_CLIENT_SECRET=<your client secret>
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

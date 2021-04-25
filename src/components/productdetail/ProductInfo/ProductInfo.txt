@@ -1,8 +1,0 @@
-de:
-  showMore: "Mehr"
-  showLess: "Weniger"
-  inStock: "???????????"
-en:
-  showMore: "Show more"
-  showLess: "Show less"
-  inStock: "In stock"

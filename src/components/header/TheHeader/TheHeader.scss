@@ -1,8 +1,7 @@
-/*-------- 2. Header style ---------*/
+@import '../../../assets/scss/global';
 
 .main-header-wrap {
   display: block;
-
   @media #{$md-layout} {
     display: none;
   }
@@ -108,13 +107,15 @@
       }
 
       &::before {
-        color: #989898;
-        content: '\f107';
-        font-family: FontAwesome;
-        font-size: 1em;
+        height: 7px;
+        width: 7px;
+        border-left: 1px solid #989898;
+        border-bottom: 1px solid #989898;
+        transform: rotate(-45deg);
+        content: '';
         position: absolute;
         right: -15px;
-        top: 2px;
+        top: 15px;
       }
 
       &.curr-lang-hover::before {
@@ -127,6 +128,7 @@
         top: 2px;
       }
 
+      
       > a {
         color: #989898;
         font-size: 0.857em;
