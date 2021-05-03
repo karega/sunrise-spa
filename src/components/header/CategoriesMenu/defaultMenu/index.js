@@ -1,12 +1,13 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const CategoriesMenu = () => {
+  const history = useHistory();
+  const openCategory = (name) => {
+    history.push(`/products/${name}`);
+  };
   const hoverOnCategory = (x) => {};
-
   const hoverOffCategory = () => {};
-
-  const clickOnCategory = () => {};
-
   const sortedCategories = [
     {
       name: "New",
@@ -17,7 +18,7 @@ const CategoriesMenu = () => {
           id: 67,
           children: [
             {
-              name: "x",
+              name: "Shoes",
               id: 23,
             },
             {
@@ -194,7 +195,9 @@ const CategoriesMenu = () => {
                 data-test="category-1st-level"
               >
                 <a
-                  onClick={() => clickOnCategory()}
+                  onClick={() =>
+                    openCategory(category1stLevel.name.toLowerCase())
+                  }
                   className={category1stLevel.name ? "active" : ""}
                   data-test="category-1st-level-link"
                 >
@@ -215,15 +218,34 @@ const CategoriesMenu = () => {
                         {category1stLevel.children.map((category2ndLevel) => {
                           return (
                             <li key={category2ndLevel.id}>
-                              <a className="menu-title">
-                                <span>{category2ndLevel.name}</span>
+                              <a
+                                onClick={() =>
+                                  openCategory(
+                                    category1stLevel.name.toLowerCase() +
+                                      "-" +
+                                      category2ndLevel.name.toLocaleLowerCase()
+                                  )
+                                }
+                                className="menu-title"
+                              >
+                                {category2ndLevel.name} 1
                               </a>
                               <ul>
                                 {category2ndLevel.children.map(
                                   (category3rdLevel) => {
                                     return (
                                       <li key={category3rdLevel.id}>
-                                        <a>
+                                        <a
+                                          onClick={() =>
+                                            openCategory(
+                                              category1stLevel.name.toLowerCase() +
+                                                "-" +
+                                                category2ndLevel.name.toLocaleLowerCase() +
+                                                "-" +
+                                                category3rdLevel.name.toLocaleLowerCase()
+                                            )
+                                          }
+                                        >
                                           <span>{category3rdLevel.name}</span>
                                         </a>
                                       </li>
