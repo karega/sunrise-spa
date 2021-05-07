@@ -107,27 +107,27 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div class="header-small-mobile">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-6">
-            <div class="mobile-logo logo-width">
+      <div className="header-small-mobile">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col-6">
+            <div className="mobile-logo logo-width">
               <a href="index.html">
                 <img alt="" src={logo} />
               </a>
             </div>
           </div>
-          <div class="col-6">
-            <div class="mobile-header-right-wrap">
-              <div class="same-style cart-wrap">
-                <a href="#" class="cart-active">
-                  <i class="dl-icon-cart1 "></i>
-                  <span class="count-style">02</span>
+          <div className="col-6">
+            <div className="mobile-header-right-wrap">
+              <div className="same-style cart-wrap">
+                <a href="#" className="cart-active">
+                  <i className="dl-icon-cart1 "></i>
+                  <span className="count-style">02</span>
                 </a>
               </div>
-              <div class="mobile-off-canvas">
-                <a class="mobile-aside-button" href="#"
-                  ><i class="dl-icon-menu2"></i
+              <div className="mobile-off-canvas">
+                <a className="mobile-aside-button" href="#"
+                  ><i className="dl-icon-menu2"></i
                 ></a>
               </div>
             </div>
@@ -136,13 +136,13 @@ const Header = () => {
       </div>
     </div>
     <div
-      class={clsx('search-content-wrap main-search-active', {['search-visible']: searchOpen})}
+      className={clsx('search-content-wrap main-search-active', {['search-visible']: searchOpen})}
     >
       <a onClick={ toggleSearch } className="search-close"
-        ><i class="dl-icon-close"></i
+        ><i className="dl-icon-close"></i
       ></a>
       <div className="search-content">
-        <form class="search-form">
+        <form className="search-form">
           <input
             name="q"
             type="text"
@@ -150,7 +150,7 @@ const Header = () => {
             placeholder="Search entire store…"
           />
           <button onClick={search} className="button-search">
-            <i class="dl-icon-search10"></i>
+            <i className="dl-icon-search10"></i>
           </button>
         </form>
       </div>
