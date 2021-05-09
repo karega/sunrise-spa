@@ -4,10 +4,11 @@ import logo from '../../../assets/img/logo.svg'
 import LocationSelector from '../LocationSelector/index'
 import LoginButton from '../LoginButton/index'
 import clsx from 'clsx'
+import { useLocation } from "react-router-dom"
 
 const Header = () => {
 
-
+  const location = useLocation()
   const openMiniCart = () => {
 
   }
@@ -37,12 +38,14 @@ const Header = () => {
               <div className="col-sm-6 d-flex justify-content-end">
                 <div className="curr-lang-wrap curr-lang-inc">
                   <ul>
-                  <LocationSelector
-                    values={[{name: "Deutschland"}, {name: "United States"}]}
-                    title="location"
-                    data-test="country-selector-dropdown"
-                    // v-if="showLocationChange"
-                  />
+                 {
+                   !location.pathname.includes('product') &&  <LocationSelector
+                   values={[{name: "Deutschland"}, {name: "United States"}]}
+                   title="location"
+                   data-test="country-selector-dropdown"
+                   // v-if="showLocationChange"
+                 />
+                 }
                   <LocationSelector
                     values={[{name: "English"}, {name: "Deutsch"}]}
                     title="language"
