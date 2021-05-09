@@ -5,6 +5,8 @@ import TopBar from "../TopBar/index";
 import { useTranslation } from "react-i18next"
 import Translation from "./ProductList.json"
 import ProductFilter from "../ProductFilter/index"
+import ProductThumbnail from "../../common/ProductThumbnail"
+import products from './products.json'
 
 const ProductList = () => {
   const { t, i18n } = useTranslation();
@@ -109,23 +111,17 @@ const ProductList = () => {
         // :allChannels="allChannels"
         show={show}
       /> 
-        <div className="shop-wrapper" v-if="products.results.length">
+       { products.results.length &&<div className="shop-wrapper" >
           <div className="row">
-            {/* <ProductThumbnail
-            @open-modal="openModal"
-            v-for="product in products.results"
+         { products.results.map(product => (<ProductThumbnail
+            // @open-modal="openModal"
             data-test="product-list"
-            :key="product.id"
-            :product="product"
-          />
+            key={product.id}
+            product={product}
+          />))}
         </div>
-        <Pagination
-          :pageSize="limit"
-          :total="totalProducts"
-          :page="page"
-          @pagechanged="changePage"
-        /> */}
-          </div>
+ 
+          </div>}
 
           <div>
             <div className="empty-results-container">
@@ -143,7 +139,6 @@ const ProductList = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

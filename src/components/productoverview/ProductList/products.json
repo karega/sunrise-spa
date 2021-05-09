@@ -1,0 +1,344 @@
+{
+  "limit": 12,
+  "offset": 0,
+  "count": 12,
+  "total": 24,
+  "results": [  
+    {
+      "id": "4de4b5c5-7d4a-4c32-b6bc-81f18dcabc00",
+      "masterData": {
+        "current": {
+          "name": "Handbag ”Chelsea” Liebeskind brown",
+          "slug": "liebeskind-handbag-chelsea-brown",
+          "masterVariant": {
+            "sku": "A0E200000001Z0W",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/073294_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "b4133aed-9a39-4171-8749-55adc7bf557b",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 25900,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "8b746292-8f77-4908-bdd6-112cb9b0de0b",
+      "masterData": {
+        "current": {
+          "name": "Shirt Polo Ralph Lauren white",
+          "slug": "poloralphlauren-shirt-A18KSCN7-white",
+          "masterVariant": {
+            "sku": "M0E20000000E2ST",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/079909_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "b0e5f191-9482-415a-bcc9-fad04e63b0f4",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 9900,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "f0cee6f8-7097-4da7-ba30-9b0d490cea44",
+      "masterData": {
+        "current": {
+          "name": "Slip-On Shoes “Olivia” Michael Kors black",
+          "slug": "michael-kors-slip-on-olivia-43S5OLFP1L-black",
+          "masterVariant": {
+            "sku": "M0E20000000ELIV",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/082398_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "460e99af-25eb-4f22-8254-dc381e37333b",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 12500,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "846d13cb-9d0f-4ab6-8e98-5ccacc6e5782",
+      "masterData": {
+        "current": {
+          "name": "Long sleeve T-Shirt Michael Kors black",
+          "slug": "michael-kors-t-shirt-MS55KGW1UK-black",
+          "masterVariant": {
+            "sku": "M0E20000000EL2R",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/082351_1_medium.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "35d827cf-82d5-415b-aab8-6cbd328129f5",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 9500,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "a9997b31-66c7-4f4a-8ab9-3e8981eea58d",
+      "masterData": {
+        "current": {
+          "name": "Pumps “Flex” Michael Kors nickel",
+          "slug": "michael-kors-pumps-flex-40S5MFMP1M-nickel",
+          "masterVariant": {
+            "sku": "M0E20000000ELJT",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/082400_1_medium.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "6ea59e43-d1ac-45bf-855c-ebbb9d00dfc1",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 12000,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "4dc9f06b-ef2c-4c7e-a919-dd8fbc9fd55b",
+      "masterData": {
+        "current": {
+          "name": "Coat Aspesi blue",
+          "slug": "aspesi-coat-I502997385098-blue",
+          "masterVariant": {
+            "sku": "M0E20000000ECTT",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/081200_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "e3ae943d-0b3c-41b1-b889-3e25b36a4413",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 42900,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "32497a2f-1932-4786-befb-1d9319d8185d",
+      "masterData": {
+        "current": {
+          "name": "Jacket Michael Kors dark blue",
+          "slug": "michaelkors-jacket-mh41easc64-darkblue",
+          "masterVariant": {
+            "sku": "M0E20000000DLUW",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/072769_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "24d5fd69-d998-4f88-8d45-1bbb94aaa3b0",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 19500,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "7bbfed89-a6eb-4a62-a217-7562b2f7ca04",
+      "masterData": {
+        "current": {
+          "name": "Pants Jacob Cohen green",
+          "slug": "jacob-cohen-trousers-j622-697-green",
+          "masterVariant": {
+            "sku": "M0E20000000DUIR",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/078893_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "23b40f0a-208d-40a3-aa78-ad231fd4e8a3",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 26500,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "5d8f8c35-8a2d-40ba-94dc-8a62c1e33fc5",
+      "masterData": {
+        "current": {
+          "name": "Save the Duck – Casual Jacket “Giga”",
+          "slug": "save-the-duck-jacket-giga-d3362-beige",
+          "masterVariant": {
+            "sku": "M0E20000000FCKV",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/086061_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "e3cac2e4-dd73-413e-96a7-bfcd99c507c8",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 12900,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "49afca8d-fcce-4882-bd79-05919920b2a7",
+      "masterData": {
+        "current": {
+          "name": "Lace up shoes Tods dark blue",
+          "slug": "tods-laceupshoes-C20RE0U820-darkblue",
+          "masterVariant": {
+            "sku": "M0E20000000DWXZ",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/079097_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "2d999bac-639a-4a16-90e1-7d16404932b6",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 37000,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "186dcded-6f89-43c5-8c37-e1f125292f90",
+      "masterData": {
+        "current": {
+          "name": "Polo Ralph Lauren – Sweater",
+          "slug": "polo-ralph-lauren-sweater-A42SVN05W0040-brown",
+          "masterVariant": {
+            "sku": "M0E20000000EO8X",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/082793_1_medium.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "76a941aa-e55c-435d-b7c1-3cc0403f4b3c",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 13800,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "0c9decb9-86ac-4d8d-9884-01ab31ac5b8e",
+      "masterData": {
+        "current": {
+          "name": "Handbag by Karl Lagerfeld",
+          "slug": "bag-karllagerfeld-46kw3004-black",
+          "masterVariant": {
+            "sku": "A0E200000001UTR",
+            "images": [
+              {
+                "url": "https://s3-eu-west-1.amazonaws.com/commercetools-maximilian/products/071642_1_large.jpg",
+                "dimensions": { "w": 0, "h": 0 }
+              }
+            ],
+            "price": {
+              "country": "DE",
+              "id": "fbb75b21-c109-4999-8fa6-4c4fa5724c56",
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 64900,
+                "fractionDigits": 2
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
