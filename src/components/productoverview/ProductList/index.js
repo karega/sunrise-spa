@@ -2,20 +2,21 @@ import React from "react";
 import "./ProductList.scss";
 import LoadingSpinner from "../../common/LoadingSpinner/LoadingSpinner";
 import TopBar from "../TopBar/index";
-import { useTranslation } from "react-i18next"
-import Translation from "./ProductList.json"
-import ProductFilter from "../ProductFilter/index"
-import ProductThumbnail from "../../common/ProductThumbnail"
-import products from './products.json'
+import { useTranslation } from "react-i18next";
+import Translation from "./ProductList.json";
+import ProductFilter from "../ProductFilter/index";
+import ProductThumbnail from "../../common/ProductThumbnail";
+import products from "./products.json";
+import Pagination from "../../common/Pagination";
 
 const ProductList = () => {
   const { t, i18n } = useTranslation();
   const language = "en";
-  React.useEffect(()=>{
-    i18n.addResourceBundle(language, "productList", Translation)
-  },[])
+  React.useEffect(() => {
+    i18n.addResourceBundle(language, "productList", Translation);
+  }, []);
 
-  const [show, toggleShow] = React.useState(false)
+  const [show, toggleShow] = React.useState(false);
 
   const facets = [
     {
@@ -95,50 +96,54 @@ const ProductList = () => {
       {/* <LoadingSpinner /> */}
       <div className="custom-container">
         <TopBar
-        toggleFilter={toggleShow}
-        // @change-sort="changeSort"
-         show={show}
-        // v-bind:sort="sort"
-        // v-bind:count="products.count"
-        // v-bind:offset="products.offset"
-        // v-bind:total="products.total"
+          toggleFilter={toggleShow}
+          // @change-sort="changeSort"
+          show={show}
+          // v-bind:sort="sort"
+          // v-bind:count="products.count"
+          // v-bind:offset="products.offset"
+          // v-bind:total="products.total"
         />
-       <ProductFilter 
-        facets={facets}
-        // :facetFilter="facetFilter"
-        // @filter-change="facetFilterChange"
-        //  @channel-change="channelChange"
-        // :allChannels="allChannels"
-        show={show}
-      /> 
-       { products.results.length &&<div className="shop-wrapper" >
-          <div className="row">
-         { products.results.map(product => (<ProductThumbnail
-            // @open-modal="openModal"
-            data-test="product-list"
-            key={product.id}
-            product={product}
-          />))}
-        </div>
- 
-          </div>}
-
-          <div>
-            <div className="empty-results-container">
-              <span className="empty-results" data-test="empty-results">
-              {t(`productList:${language}.notFound`)}
-              </span>
+        <ProductFilter
+          facets={facets}
+          // :facetFilter="facetFilter"
+          // @filter-change="facetFilterChange"
+          //  @channel-change="channelChange"
+          // :allChannels="allChannels"
+          show={show}
+        />
+        {products.results.length && (
+          <div className="shop-wrapper">
+            <div className="row">
+              {products.results.map((product) => (
+                <ProductThumbnail
+                  // @open-modal="openModal"
+                  data-test="product-list"
+                  key={product.id}
+                  product={product}
+                />
+              ))}
             </div>
           </div>
-        </div>
+        )}
+
+        <Pagination />
         <div>
           <div className="empty-results-container">
-            <span className="empty-results" data-test="category-not-found">
-              {t(`productList:${language}.categoryNotFound`)}
+            <span className="empty-results" data-test="empty-results">
+              {t(`productList:${language}.notFound`)}
             </span>
           </div>
         </div>
       </div>
+      <div>
+        <div className="empty-results-container">
+          <span className="empty-results" data-test="category-not-found">
+            {t(`productList:${language}.categoryNotFound`)}
+          </span>
+        </div>
+      </div>
+    </div>
   );
 };
 
