@@ -1,7 +1,6 @@
 import React from "react";
 import "./ProductGallery.scss"
-const ProductGallery = () => {
-  const quickview = false;
+const ProductGallery = ({ quickview }) => {
   const product = JSON.parse(localStorage.getItem('product'));
   const productImage = product.masterData.current.masterVariant.images[0]?.url;
   return (

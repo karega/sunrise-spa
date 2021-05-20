@@ -1,7 +1,8 @@
 import React from 'react';
 import './MiniCart.scss';
 import clsx from 'clsx';
-
+import products from '../../productoverview/ProductList/products.json';
+import BasePrice from "../../common/BasePrice"
 
 const MiniCart = () => {
     const show = true;
@@ -24,6 +25,7 @@ const MiniCart = () => {
         return null;
       }
 
+    console.log(">>>>>>>",products.results)
     const sortedLineItems = [{id: 1, name: 'xyz', quantity: 10, variant: []}]
     return (
         <span>
@@ -45,7 +47,7 @@ const MiniCart = () => {
               <span v-if="cartNotEmpty">
                 <ul>
                   {
-                      sortedLineItems.map((lineItem)=>{
+                      products.results.slice(0,3).map((lineItem)=>{
                           return (
                             <li
                             key={lineItem.id}
@@ -55,7 +57,7 @@ const MiniCart = () => {
                             <div className="cart-img">
                               <a>
                                 <img
-                                  src={()=> displayedImageUrl(lineItem.variant)}
+                                  src={lineItem.masterData.current.masterVariant.images[0].url}
                                   alt={lineItem.name}
                                 />
                               </a>
@@ -65,14 +67,14 @@ const MiniCart = () => {
                                 <a
                                   data-test="cart-line-item-link"
                                 >
-                                   namefromlineItem
+                                   {lineItem.masterData.current.name}
                                 </a>
                               </h4>
                               <span
                                 data-test="cart-line-item-quantity"
                               >
-                                {lineItem.quantity} ×
-                                {/* <BasePrice price="totalPrice(lineItem)" />*/}
+                                {1} ×
+                                <BasePrice price={lineItem.masterData.current.masterVariant.price} />
                               </span>
                             </div>
                             {/* <LineItemDeleteForm lineItemId="lineItem.id" /> */}
@@ -83,11 +85,11 @@ const MiniCart = () => {
                 </ul>
                 <div className="cart-total">
                   <h4>
-                    'subtotal':
-                    {/* <BasePrice
-                      price={subtotal}
+                    subtotal: 315 EUR
+                   {/* <BasePrice
+                      price={lineItem.masterData.current.masterVariant.price}
                       data-test="mini-cart-price"
-                    /> */}
+                    />  */}
                   </h4>
                 </div>
                 <div className="cart-checkout-btn">
@@ -96,18 +98,18 @@ const MiniCart = () => {
                     onClick={close}
                     className="btn-grey"
                   >
-                    'viewBag'
+                    viewBag
                   </a>
                   <a
                     
                     data-test="checkout-button"
                     onClick={close}
-                    >'checkout'</a>
+                    >checkout</a>
                 </div>
               </span>
-              <span v-if="!cartNotEmpty">
+              {/* <span v-if="!cartNotEmpty">
                 <h5>'emptyCart'</h5>
-              </span>
+              </span> */}
             </div>
           </div>
         </div>

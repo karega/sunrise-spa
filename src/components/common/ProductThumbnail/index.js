@@ -6,7 +6,7 @@ import BasePrice from "../BasePrice";
 import { useHistory } from "react-router-dom";
 
 
-const ProductThumbnail = ({ product }) => {
+const ProductThumbnail = ({ product, openModal }) => {
   const history = useHistory()
   const { t, i18n } = useTranslation();
   const language = "en";
@@ -24,7 +24,11 @@ const ProductThumbnail = ({ product }) => {
     history.push(`/product/${slug}/${sku}`);
   };
 
-  const openModal = () => {};
+ 
+  const quickView = ()=> {
+    openModal();
+    localStorage.setItem('product', JSON.stringify(product))
+  }
 
   const addLineItem = () => {};
   return (
@@ -47,7 +51,7 @@ const ProductThumbnail = ({ product }) => {
             )}
           </a>
           <div className="product-action">
-            <a onClick={openModal}>
+            <a onClick={()=> {quickView()}}>
               <i className="dl-icon-view"></i> <span>Quick Shop</span>
             </a>
             <a

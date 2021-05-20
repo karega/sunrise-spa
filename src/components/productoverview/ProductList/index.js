@@ -9,7 +9,7 @@ import ProductThumbnail from "../../common/ProductThumbnail";
 import products from "./products.json";
 import Pagination from "../../common/Pagination";
 
-const ProductList = () => {
+const ProductList = ({ openModal }) => {
   const { t, i18n } = useTranslation();
   const language = "en";
   React.useEffect(() => {
@@ -117,7 +117,7 @@ const ProductList = () => {
             <div className="row">
               {products.results.map((product) => (
                 <ProductThumbnail
-                  // @open-modal="openModal"
+                  openModal={openModal}
                   data-test="product-list"
                   key={product.id}
                   product={product}
