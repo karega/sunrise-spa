@@ -1,3 +1,4 @@
+import React from "react"
 import CategoriesMenu from '../CategoriesMenu/defaultMenu/index'
 import './TheHeader.scss'
 import logo from '../../../assets/img/logo.svg'
@@ -5,23 +6,19 @@ import LocationSelector from '../LocationSelector/index'
 import LoginButton from '../LoginButton/index'
 import clsx from 'clsx'
 import { useLocation } from "react-router-dom"
+import Search  from '../../common/Search'
 
-const Header = () => {
-
+const Header = ({ openCart }) => {
+  const [isSearchOpen, toggleSearch] = React.useState(false);
   const location = useLocation()
   const openMiniCart = () => {
-
-  }
-
-  const toggleSearch = () => {
-
+    openCart(true)
   }
 
   const search = () => {
 
   }
 
-  const searchOpen = false;
 
   return (
     <header className="header-area">
@@ -138,26 +135,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-    <div
-      className={clsx('search-content-wrap main-search-active', {['search-visible']: searchOpen})}
-    >
-      <a onClick={ toggleSearch } className="search-close"
-        ><i className="dl-icon-close"></i
-      ></a>
-      <div className="search-content">
-        <form className="search-form">
-          <input
-            name="q"
-            type="text"
-            // v-model="searchText"
-            placeholder="Search entire store…"
-          />
-          <button onClick={search} className="button-search">
-            <i className="dl-icon-search10"></i>
-          </button>
-        </form>
-      </div>
-    </div>
+    <Search search={search} isSearchOpen={isSearchOpen} toggleSearch={toggleSearch}/>
     </header>
   );
 };

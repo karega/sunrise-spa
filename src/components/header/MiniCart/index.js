@@ -4,19 +4,14 @@ import clsx from 'clsx';
 import products from '../../productoverview/ProductList/products.json';
 import BasePrice from "../../common/BasePrice"
 
-const MiniCart = () => {
+const MiniCart = ({ openCart }) => {
     const show = true;
     const subtotal = 9
     const close = () => {
-
+      openCart(false)
     }
 
-//    const nameFromLineItem = (lineItem) => {
-//         const attributes = variantAttributes(lineItem?.variant, locale(this));
-//         return `${lineItem.name} ${attributes.map(
-//           ({ name, value }) => `${name}: ${value}`,
-//         ).join(', ')}`;
-//     }
+
 
    const displayedImageUrl = (variant) =>  {
         if (Array.isArray(variant.images) && variant.images.length) {
@@ -25,7 +20,6 @@ const MiniCart = () => {
         return null;
       }
 
-    console.log(">>>>>>>",products.results)
     const sortedLineItems = [{id: 1, name: 'xyz', quantity: 10, variant: []}]
     return (
         <span>
@@ -36,8 +30,7 @@ const MiniCart = () => {
           <div className="sidebar-cart-all">
             <a
               className="cart-close"
-              href="javascript:;"
-              onClick={close}
+              onClick={()=>{close()}}
               data-test="mini-cart-close-button"
             >
               <i className="dl-icon-close"></i>
