@@ -1,96 +1,472 @@
+/*****************************************************************************/
 /*
-Error: Undefined mixin 'truncate'.
-        on line 272 of ./src/assets/scss/_navigation.scss, in `truncate'
-        from line 272 of ./src/assets/scss/_navigation.scss
+/* COLORS
+/*
+/*****************************************************************************/
+/*****************************************************************************/
+/*
+/* NAVIGATION
+/*
+/*****************************************************************************/
+.header {
+  height: 50px;
+  background: #2A343F;
+  z-index: 9999;
+  position: relative; }
+  .header .col-xs-12 {
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      .header .col-xs-12 {
+        padding-left: 15px;
+        padding-right: 15px; } }
 
-267:     .selectboxit-text {
-268:       max-width: none !important;
-269:       width: 120px !important;
-270:     }
-271:     .selectboxit-option-anchor {
-272:       @include truncate;
-273:     }
-274: 
-275:     @media screen and (min-width: 768px) {
-276:       display: inline-block;
-277:     }
+.navbar {
+  min-height: 0; }
 
-Backtrace:
-./src/assets/scss/_navigation.scss:272:in `truncate'
-./src/assets/scss/_navigation.scss:272
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:98:in `with_mixin'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:338:in `watch_or_update'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Library/Ruby/Gems/2.6.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:23:in `load'
-/usr/local/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'truncate'.\A         on line 272 of ./src/assets/scss/_navigation.scss, in `truncate'\A         from line 272 of ./src/assets/scss/_navigation.scss\A \A 267:     .selectboxit-text {\A 268:       max-width: none !important;\A 269:       width: 120px !important;\A 270:     }\A 271:     .selectboxit-option-anchor {\A 272:       @include truncate;\A 273:     }\A 274: \A 275:     @media screen and (min-width: 768px) {\A 276:       display: inline-block;\A 277:     }"; }
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+  max-height: 400px; }
+
+.darkbg {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0; }
+
+@media screen and (max-width: 767px) {
+  .nav-list li {
+    display: block; } }
+.nav-list {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .125rem; }
+  .nav-list li {
+    color: #ffffff;
+    display: inline-flex;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    border-right: solid 1px #404953; }
+    @media screen and (min-width: 768px) {
+      .nav-list li {
+        width: inherit;
+        text-align: left; } }
+    .nav-list li > a,
+    .nav-list li > button {
+      display: -webkit-box;
+      text-transform: uppercase;
+      letter-spacing: .125rem;
+      width: 100%;
+      height: 100%; }
+  .nav-list .list-item-nav-toggle {
+    float: left; }
+    .nav-list .list-item-nav-toggle .navbar-toggle {
+      margin: 0;
+      padding: 14px 20px 20px;
+      border: none;
+      background: none; }
+      .nav-list .list-item-nav-toggle .navbar-toggle .icon-bar {
+        width: 30px;
+        height: 2px;
+        margin: auto;
+        background: #ffffff;
+        display: block;
+        border-radius: 1px; }
+        .nav-list .list-item-nav-toggle .navbar-toggle .icon-bar + .icon-bar {
+          margin-top: 8px; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-nav-toggle {
+        display: none; } }
+  .nav-list .list-item-store {
+    float: left; }
+    .nav-list .list-item-store .store-select {
+      color: #ffffff;
+      padding: 10px 10px; }
+      .nav-list .list-item-store .store-select.icon-marker::before {
+        font-size: 28px;
+        position: relative;
+        vertical-align: top; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-store {
+        border: none; }
+        .nav-list .list-item-store .store-select {
+          color: #AAAEB2;
+          padding: 15px 10px 15px 0;
+          font-size: 12px; }
+          .nav-list .list-item-store .store-select:hover, .nav-list .list-item-store .store-select:focus {
+            color: #ffffff; }
+          .nav-list .list-item-store .store-select.icon-marker::before {
+            font-size: 26px;
+            bottom: 5px;
+            margin-right: 3px; } }
+    @media screen and (max-width: 767px) {
+      .nav-list .list-item-store {
+        display: none; } }
+  .nav-list .list-item-help {
+    display: none; }
+    .nav-list .list-item-help .link-help {
+      color: #AAAEB2;
+      padding: 15px 10px;
+      font-size: 12px; }
+      .nav-list .list-item-help .link-help:hover, .nav-list .list-item-help .link-help:focus {
+        color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-help {
+        display: inline-block;
+        border: none; } }
+  .nav-list .list-item-call {
+    display: none; }
+    .nav-list .list-item-call .link-hotline {
+      color: #AAAEB2;
+      padding: 15px 10px;
+      font-size: 12px; }
+      .nav-list .list-item-call .link-hotline:hover, .nav-list .list-item-call .link-hotline:focus {
+        color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-call {
+        display: inline-block;
+        border: none; } }
+  .nav-list .list-item-search {
+    float: left; }
+    .nav-list .list-item-search .search-toggle {
+      font-size: 26px;
+      padding: 8px 10px; }
+    .nav-list .list-item-search .search-toggle {
+      background: none;
+      border: none;
+      outline: none; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-search {
+        display: none; } }
+  .nav-list .location-dropdown-label {
+    font-size: 0.8em;
+    padding-left: 1.1em; }
+  .nav-list .list-item-location {
+    float: right;
+    display: inline; }
+    .nav-list .list-item-location img {
+      height: 20px;
+      margin-right: 10px; }
+      @media screen and (max-width: 767px) {
+        .nav-list .list-item-location img.pull-right {
+          float: none !important; } }
+      @media screen and (max-width: 767px) {
+        .nav-list .list-item-location img {
+          height: 25px;
+          margin: 0; } }
+    .nav-list .list-item-location .location-dropdown {
+      position: relative;
+      background: #2A343F;
+      padding-bottom: 10px;
+      width: 180px;
+      top: -2px;
+      text-align: left; }
+      .nav-list .list-item-location .location-dropdown .location-select {
+        width: 120px;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        background: transparent url("../img/arrow-67-white.png") no-repeat 90% 50%;
+        background-size: 10px;
+        margin: 10px;
+        text-transform: uppercase; }
+      .nav-list .list-item-location .location-dropdown li {
+        text-align: left;
+        width: 100%; }
+    .nav-list .list-item-location li {
+      display: block;
+      border: none; }
+    .nav-list .list-item-location .selectboxit-btn {
+      width: 160px !important; }
+    .nav-list .list-item-location .selectboxit-list {
+      min-width: inherit !important;
+      width: 160px !important;
+      margin: -10px 0 0 10px !important;
+      text-transform: initial;
+      font-size: 12px; }
+    .nav-list .list-item-location .selectboxit-text {
+      max-width: none !important;
+      width: 120px !important; }
+    .nav-list .list-item-location .selectboxit-option-anchor {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-location {
+        display: inline-block; } }
+  .nav-list .list-item-user {
+    float: right; }
+    .nav-list .list-item-user .link-user {
+      color: #ffffff;
+      padding: 10px 20px; }
+      .nav-list .list-item-user .link-user.icon-user::before {
+        font-size: 28px;
+        position: relative;
+        vertical-align: top; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-user .link-user {
+        padding: 15px 20px; }
+        .nav-list .list-item-user .link-user:hover, .nav-list .list-item-user .link-user:focus {
+          background: #353e49; }
+        .nav-list .list-item-user .link-user.icon-user::before {
+          font-size: 26px;
+          bottom: 3px;
+          margin-right: 7px; } }
+  .nav-list .list-item-bag,
+  .nav-list .list-item-user {
+    z-index: 9999;
+    position: relative; }
+  .nav-list .list-item-bag {
+    float: right;
+    border: none;
+    position: relative;
+    display: block; }
+    @media screen and (min-width: 768px) {
+      .nav-list .list-item-bag {
+        border-right: solid 1px #404953; } }
+    .nav-list .list-item-bag .link-your-bag {
+      color: #ffffff;
+      padding: 10px 20px;
+      position: relative;
+      text-transform: uppercase; }
+      @media screen and (min-width: 768px) {
+        .nav-list .list-item-bag .link-your-bag {
+          padding: 15px 20px; }
+          .nav-list .list-item-bag .link-your-bag:hover, .nav-list .list-item-bag .link-your-bag:focus {
+            background: #353e49; } }
+      .nav-list .list-item-bag .link-your-bag.icon-hand-bag::before {
+        font-size: 28px;
+        position: relative;
+        vertical-align: top; }
+        @media screen and (min-width: 768px) {
+          .nav-list .list-item-bag .link-your-bag.icon-hand-bag::before {
+            font-size: 26px;
+            bottom: 3px;
+            margin-right: 7px; } }
+      .nav-list .list-item-bag .link-your-bag.not-empty {
+        color: #333333;
+        background: #FFBA27; }
+        .nav-list .list-item-bag .link-your-bag.not-empty .cart-item-number {
+          color: #ffffff;
+          background: #D54D4D; }
+        @media screen and (min-width: 768px) {
+          .nav-list .list-item-bag .link-your-bag.not-empty:hover, .nav-list .list-item-bag .link-your-bag.not-empty:focus {
+            background: #ffc447; } }
+      .nav-list .list-item-bag .link-your-bag .cart-item-number {
+        position: absolute;
+        color: #2A343F;
+        background: #FFBA27;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 20px;
+        right: 10px;
+        bottom: 20px;
+        letter-spacing: normal;
+        font-size: 12px;
+        font-weight: bold; }
+        @media screen and (min-width: 768px) {
+          .nav-list .list-item-bag .link-your-bag .cart-item-number {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            bottom: 2px;
+            margin-left: 5px;
+            line-height: 26px;
+            right: 0; } }
+
+.brand-logo {
+  display: block; }
+  .brand-logo img {
+    width: 100%;
+    max-width: 220px;
+    padding: 15px 25px 10px; }
+    @media screen and (min-width: 768px) {
+      .brand-logo img {
+        width: 220px;
+        padding: 0; } }
+
+@media screen and (min-width: 768px) {
+  .logo-search {
+    margin-top: 10px; } }
+
+.search-box {
+  position: relative;
+  display: none;
+  padding: 20px 0; }
+  @media screen and (min-width: 768px) {
+    .search-box {
+      display: block !important;
+      padding: 0; } }
+  .search-box .search-field {
+    height: 40px;
+    width: 100%;
+    background: #F5F2EA;
+    border: 1px solid rgba(170, 174, 178, 0.5);
+    border-radius: 2px;
+    margin: 0;
+    padding: 0 1em;
+    font-size: 16px; }
+  .search-box .search-button {
+    outline: none;
+    background: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 22px;
+    color: #2A343F;
+    padding: 8px 10px 8px 20px;
+    line-height: 10px; }
+    @media screen and (min-width: 768px) {
+      .search-box .search-button {
+        top: 0; } }
+
+.search-field {
+  width: 300px;
+  margin: 6px 0;
+  height: 30px; }
+
+.nav-minicart {
+  position: absolute;
+  width: 500%;
+  right: 0;
+  background: #ffffff;
+  border: 1px #D6D6D6 solid;
+  border-top: 0;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  color: #333333; }
+  .nav-minicart ul {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0;
+    list-style: none;
+    max-height: 13em; }
+    .nav-minicart ul li {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      height: auto;
+      border-bottom: 1px #D6D6D6 solid;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      color: #333333;
+      border-right: 0; }
+      .nav-minicart ul li:last-child {
+        border-bottom: 0; }
+      .nav-minicart ul li a.img {
+        width: 70px;
+        min-height: 90px;
+        float: left;
+        margin-right: 15px; }
+        .nav-minicart ul li a.img img {
+          width: 100%; }
+      .nav-minicart ul li p {
+        float: left;
+        text-transform: none;
+        letter-spacing: normal; }
+        .nav-minicart ul li p.product-title {
+          margin: 0;
+          font-size: 1.1em;
+          line-height: 1.2em;
+          width: 90%; }
+      .nav-minicart ul li .details {
+        position: absolute;
+        right: 15px;
+        bottom: 20px; }
+        .nav-minicart ul li .details p {
+          margin: 0;
+          text-align: right;
+          padding-right: 15px;
+          margin-right: 15px;
+          border-right: 1px #D6D6D6 solid;
+          color: #858585;
+          font-size: 1em;
+          text-transform: uppercase; }
+          .nav-minicart ul li .details p span {
+            display: block;
+            color: #333333; }
+        .nav-minicart ul li .details .delete {
+          display: block;
+          margin-top: 8px;
+          float: left; }
+          .nav-minicart ul li .details .delete img {
+            margin: 0; }
+  .nav-minicart .gradient {
+    width: 100%;
+    height: 50px;
+    float: left;
+    position: relative;
+    left: 0px;
+    margin-top: -41px;
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMDEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, white 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(1%, rgba(255, 255, 255, 0.01)), color-stop(100%, white));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, white 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, white 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, white 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.01) 1%, white 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+    /* IE6-8 */ }
+  .nav-minicart .total-price {
+    text-align: right;
+    color: #333333;
+    margin: 20px 0px;
+    font-size: 1.3em;
+    font-weight: bold; }
+  .nav-minicart .btn-grey {
+    float: left;
+    text-transform: uppercase;
+    text-align: center; }
+  .nav-minicart .btn-yellow {
+    position: absolute;
+    right: 15px;
+    text-transform: uppercase;
+    text-align: center; }
+  .nav-minicart .btn-grey,
+  .nav-minicart .btn-yellow {
+    width: 46%;
+    display: inline-block; }
+  @media screen and (min-width: 768px) {
+    .nav-minicart {
+      width: 360px;
+      right: 0; }
+      .nav-minicart ul {
+        max-height: 22em; }
+        .nav-minicart ul li a.img {
+          margin-right: 20px; } }
+
+.btn-grey {
+  background: none;
+  border: 2px solid #D6D6D6;
+  color: #ADADAD;
+  margin-right: 0.5em;
+  padding: 0.4em 1em;
+  font-size: 1.2em; }
+  .btn-grey:hover {
+    color: #858585;
+    border: 2px solid #858585; }
+
+.btn-yellow {
+  border: none;
+  color: #333333;
+  background: #FFBA27;
+  padding: 0.5em 1em;
+  font-size: 1.2em; }
+  .btn-yellow:hover {
+    background: #ffc241; }
+
+/*# sourceMappingURL=_navigation.css.map */
