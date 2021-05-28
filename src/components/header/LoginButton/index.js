@@ -1,5 +1,5 @@
 import React from "react";
-import "./LoginButton.scss";
+import "./LoginButton.css";
 
 const LoginButton = () => {
    const showLoggedIn = false

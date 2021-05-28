@@ -1,6 +1,6 @@
 import React from "react";
 import HoverDropdown from "../../common/HoverDropdown";
-import "./TopBar.scss";
+import "./TopBar.css";
 import { useTranslation } from "react-i18next";
 import Translation from "./TopBar.json"
 import clsx from "clsx";

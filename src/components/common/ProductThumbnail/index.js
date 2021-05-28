@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductThumbnail.scss";
+import "./ProductThumbnail.css";
 import Translation from "./ProductThumbnail.json";
 import { useTranslation } from "react-i18next";
 import BasePrice from "../BasePrice";

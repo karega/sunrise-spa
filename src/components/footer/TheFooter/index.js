@@ -1,5 +1,5 @@
 import React from 'react';
-import './TheFooter.scss';
+import './TheFooter.css';
 import payments from '../../../assets/img/payments.png';
 import logo from '../../../assets/img/logo.svg'
 

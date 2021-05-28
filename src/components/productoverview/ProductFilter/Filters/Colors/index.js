@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.scss"
+import "./style.css"
 
 const Colors = ({ terms, name, isChecked }) => {
   return <div>

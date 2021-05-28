@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductQuickView.scss";
+import "./ProductQuickView.css";
 import { useTranslation } from "react-i18next";
 import ProductGallery from "../../productdetail/ProductGallery";
 import BasePrice from "../../common/BasePrice";

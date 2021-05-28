@@ -1,0 +1,66 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.hoover-dropdown {
+  position: relative;
+  padding: 30px 0;
+  line-height: 1; }
+  .hoover-dropdown > span {
+    color: #262626;
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+    cursor: pointer; }
+    .hoover-dropdown > span i {
+      color: #262626;
+      font-weight: 600;
+      margin-left: 3px;
+      transition: all 0.1s ease 0s; }
+      .hoover-dropdown > span i.angle-up {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        opacity: 0;
+        visibility: hidden; }
+  .hoover-dropdown ul {
+    right: 0;
+    top: 100%;
+    position: absolute;
+    background-color: #fff;
+    padding: 7px;
+    z-index: 11;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.2);
+    transition: all 250ms ease-out;
+    margin-top: 30px; }
+    .hoover-dropdown ul li {
+      display: block; }
+      .hoover-dropdown ul li a {
+        padding: 5px 10px;
+        white-space: pre;
+        display: block;
+        border-radius: 4px;
+        font-size: 0.92em;
+        color: #989898;
+        line-height: 24px; }
+        .hoover-dropdown ul li a:hover {
+          color: #fff;
+          color: #fdbb41; }
+      .hoover-dropdown ul li.active a {
+        color: #fff;
+        background-color: #fdbb41; }
+  .hoover-dropdown:hover span i.angle-down {
+    opacity: 0;
+    visibility: hidden; }
+  .hoover-dropdown:hover span i.angle-up {
+    opacity: 1;
+    visibility: visible; }
+  .hoover-dropdown:hover ul {
+    opacity: 1;
+    visibility: visible;
+    margin-top: -5px; }
+
+/*# sourceMappingURL=HoverDropdown.css.map */

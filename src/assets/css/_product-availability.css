@@ -1,0 +1,30 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.product-availability .status {
+  color: #ADADAD;
+  font-size: 17px;
+  margin-top: 8px; }
+  .product-availability .status .status-color {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin: 6px 13px 0 0;
+    float: left; }
+  .product-availability .status .green {
+    background-color: #95c11f; }
+  .product-availability .status .orange {
+    background-color: #ff761a; }
+  .product-availability .status .red {
+    background-color: #ff0000; }
+.product-availability .action {
+  text-align: right;
+  display: none; }
+.product-availability .action,
+.product-availability .status {
+  width: 50%;
+  float: left; }
+
+/*# sourceMappingURL=_product-availability.css.map */

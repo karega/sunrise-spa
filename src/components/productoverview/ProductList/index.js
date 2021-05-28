@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductList.scss";
+import "./ProductList.css";
 import LoadingSpinner from "../../common/LoadingSpinner/LoadingSpinner";
 import TopBar from "../TopBar/index";
 import { useTranslation } from "react-i18next";

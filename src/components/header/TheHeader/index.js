@@ -1,6 +1,6 @@
 import React from "react"
 import CategoriesMenu from '../CategoriesMenu/defaultMenu/index'
-import './TheHeader.scss'
+import './TheHeader.css'
 import logo from '../../../assets/img/logo.svg'
 import LocationSelector from '../LocationSelector/index'
 import LoginButton from '../LoginButton/index'

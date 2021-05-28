@@ -1,4 +1,4 @@
-import "./PageHome.scss";
+import "./PageHome.css";
 import jeans from "../../../assets/img/jeans1.jpeg";
 import sho from "../../../assets/img/sho3.jpeg";
 import acc from "../../../assets/img/acc.jpeg";

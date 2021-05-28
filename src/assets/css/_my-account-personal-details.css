@@ -1,0 +1,186 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.my-account {
+  padding-bottom: 50px; }
+
+.my-account-title {
+  padding: 20px 0; }
+  .my-account-title .my-account-title-text {
+    padding-left: 10px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 200; }
+    .my-account-title .my-account-title-text:before {
+      font-size: 26px;
+      position: relative;
+      bottom: -5px;
+      margin-right: 10px; }
+
+.my-account-content {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border: 1px solid #D6D6D6; }
+  .my-account-content > div {
+    padding: 0; }
+  .my-account-content .my-account-tab {
+    padding: 30px; }
+
+.my-account-sidebar {
+  padding: 0;
+  background: #F5F5F5; }
+  .my-account-sidebar .my-account-sidebar-items a, .my-account-sidebar .my-account-sidebar-items button {
+    width: 100%;
+    text-align: left;
+    color: #858585;
+    display: block;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-left: 4px solid transparent; }
+    .my-account-sidebar .my-account-sidebar-items a:hover, .my-account-sidebar .my-account-sidebar-items button:hover {
+      border-left-color: #D6D6D6;
+      color: #333333; }
+  .my-account-sidebar .my-account-sidebar-items a.router-link-active {
+    color: #333333;
+    background: #ffffff;
+    border-left-color: #FFBA27; }
+
+.sidebar-wishlist-heart {
+  height: 15px;
+  margin-right: 5px; }
+
+.sidebar-wishlist-quantity {
+  margin-left: 5px;
+  background: #D54D4D;
+  border-radius: 50%;
+  padding: 0 3px;
+  color: #ffffff;
+  float: right;
+  font-size: 13px; }
+
+.my-account-banner {
+  min-height: 100px;
+  background: #2A343F;
+  padding: 70px 10px;
+  text-transform: uppercase; }
+  .my-account-banner .banner-title {
+    color: #ffffff;
+    text-align: center;
+    font-size: 26px;
+    letter-spacing: 1px; }
+  .my-account-banner .banner-hr {
+    width: 50px;
+    background: #ffffff;
+    margin: 10px auto; }
+  .my-account-banner .banner-subtitle {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px; }
+  .my-account-banner .banner-btn-wrapper {
+    margin-top: 15px;
+    text-align: center; }
+    .my-account-banner .banner-btn-wrapper .banner-btn {
+      background: #FFBA27;
+      text-align: center;
+      padding: 8px 12px;
+      letter-spacing: 1px; }
+      .my-account-banner .banner-btn-wrapper .banner-btn:hover {
+        background: #ffc241; }
+
+.banner-two-wrapper {
+  margin-top: 25px; }
+  .banner-two-wrapper .image-banner {
+    background: url("../img/banner_mobile.jpg") no-repeat;
+    background-size: cover; }
+
+.customer-number {
+  font-weight: bold; }
+
+.personal-details-title {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 30px 0 10px;
+  border-bottom: 1px solid #D6D6D6; }
+
+.personal-details-box {
+  background: #F5F5F5;
+  margin-top: 15px;
+  padding: 15px 10px;
+  position: relative; }
+
+.personal-details-box-edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px 15px 0 0; }
+  .personal-details-box-edit button {
+    text-transform: uppercase;
+    font-size: 12px; }
+    .personal-details-box-edit button img {
+      height: 12px;
+      margin: 0 5px 5px 0; }
+
+@media screen and (max-width: 767px) {
+  .personal-details {
+    padding: 20px 0; } }
+
+.required-text {
+  color: #858585;
+  text-transform: none;
+  font-size: 14px; }
+
+.select-input {
+  background: url("../img/arrow-67-filled.png") no-repeat 90% 50% #ffffff;
+  background-size: 12px;
+  border: 1px solid #D6D6D6;
+  border-radius: 1px;
+  padding: 0.5em 3em 0.5em 0.5em;
+  margin-top: 0.2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+.form-labels {
+  text-transform: uppercase;
+  font-size: 12px; }
+
+.form-inputs input {
+  width: 100%;
+  border: 1px solid #D6D6D6;
+  border-radius: 1px;
+  padding: 0.5em;
+  margin-top: 0.2em; }
+
+.form-notes {
+  font-size: 12px;
+  color: #858585; }
+
+.personal-details-newsletter {
+  margin-bottom: 40px; }
+  .personal-details-newsletter input {
+    margin-right: 5px; }
+  .personal-details-newsletter a {
+    color: #858585;
+    text-decoration: underline; }
+
+.personal-details-edit-btn .cancel-btn {
+  border: 2px solid #ADADAD;
+  color: #ADADAD;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 16px; }
+  .personal-details-edit-btn .cancel-btn:hover {
+    background: #ADADAD;
+    color: #ffffff; }
+
+.light-grey-hr {
+  border-top: 1px solid #D6D6D6; }
+
+/*# sourceMappingURL=_my-account-personal-details.css.map */

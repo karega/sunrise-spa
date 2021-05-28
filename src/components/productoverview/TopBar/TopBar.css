@@ -1,0 +1,77 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.shop-top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
+  @media only screen and (max-width: 767px) {
+    .shop-top-bar {
+      display: block; } }
+  .shop-top-bar .shop-top-bar-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .shop-top-bar .shop-top-bar-left {
+        display: block; } }
+    @media only screen and (min-width: 576px) and (max-width: 767px) {
+      .shop-top-bar .shop-top-bar-left {
+        display: flex; } }
+    .shop-top-bar .shop-top-bar-left .shop-top-show {
+      line-height: 1; }
+      .shop-top-bar .shop-top-bar-left .shop-top-show span {
+        line-height: 24px;
+        display: block;
+        line-height: 1;
+        color: #989898;
+        font-size: 12px; }
+    .shop-top-bar .shop-top-bar-left .shop-page-list {
+      margin-left: 45px;
+      line-height: 1; }
+      @media only screen and (max-width: 767px) {
+        .shop-top-bar .shop-top-bar-left .shop-page-list {
+          margin-left: 0px;
+          margin-top: 20px; } }
+      @media only screen and (min-width: 576px) and (max-width: 767px) {
+        .shop-top-bar .shop-top-bar-left .shop-page-list {
+          margin-left: 45px;
+          margin-top: 0px; } }
+      .shop-top-bar .shop-top-bar-left .shop-page-list ul li {
+        display: inline-block;
+        color: #989898;
+        margin-right: 11px; }
+        .shop-top-bar .shop-top-bar-left .shop-page-list ul li:last-child {
+          margin-right: 0px; }
+        .shop-top-bar .shop-top-bar-left .shop-page-list ul li.active {
+          border-bottom: 1px solid #fdbb41; }
+          .shop-top-bar .shop-top-bar-left .shop-page-list ul li.active a {
+            color: #fdbb41; }
+        .shop-top-bar .shop-top-bar-left .shop-page-list ul li a {
+          color: #989898; }
+  .shop-top-bar .shop-top-bar-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .shop-top-bar .shop-top-bar-right .shop-filter {
+      line-height: 1;
+      position: relative; }
+      .shop-top-bar .shop-top-bar-right .shop-filter a {
+        color: #262626;
+        font-weight: 600;
+        font-size: 18px; }
+        .shop-top-bar .shop-top-bar-right .shop-filter a i {
+          color: #262626;
+          font-weight: 600;
+          margin-left: 3px;
+          transition: all 0.4s ease 0s; }
+        .shop-top-bar .shop-top-bar-right .shop-filter a.active i.angle-down {
+          opacity: 0;
+          visibility: hidden; }
+        .shop-top-bar .shop-top-bar-right .shop-filter a.active i.angle-up {
+          opacity: 1;
+          visibility: visible; }
+
+/*# sourceMappingURL=TopBar.css.map */

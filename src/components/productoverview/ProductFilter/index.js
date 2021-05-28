@@ -1,6 +1,6 @@
 import React from "react";
 import SlideDown from "../../common/SlideDown/index";
-import './ProductFilter.scss';
+import './ProductFilter.css';
 import TermFilter from './Filters'
 
 const ProductFilter = ({ show , facets }) => {

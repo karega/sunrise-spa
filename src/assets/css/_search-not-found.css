@@ -1,0 +1,42 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.search-not-found-title {
+  padding-bottom: 20px;
+  text-align: center; }
+  .search-not-found-title .search-results-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #858585; }
+  .search-not-found-title .search-results {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #D54D4D;
+    font-size: 38px;
+    font-weight: 200; }
+  .search-not-found-title .search-not-found-hr {
+    border-top: 1px solid #D6D6D6;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.not-found-keyword {
+  color: #D54D4D;
+  font-size: 28px;
+  font-weight: 200; }
+
+.not-found-description-wrapper {
+  width: 800px; }
+  @media screen and (max-width: 767px) {
+    .not-found-description-wrapper {
+      width: 100%; } }
+  .not-found-description-wrapper .not-found-description {
+    width: 100%; }
+
+.search-not-found-hr-bottom {
+  border-top: 1px solid #D6D6D6;
+  margin-top: 40px; }
+
+/*# sourceMappingURL=_search-not-found.css.map */

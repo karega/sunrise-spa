@@ -1,5 +1,5 @@
 import React from 'react';
-import './MiniCart.scss';
+import './MiniCart.css';
 import clsx from 'clsx';
 import products from '../../productoverview/ProductList/products.json';
 import BasePrice from "../../common/BasePrice"

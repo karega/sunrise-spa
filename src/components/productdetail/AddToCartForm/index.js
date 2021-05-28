@@ -1,5 +1,5 @@
 import React from "react";
-import "./AddToCartForm.scss";
+import "./AddToCartForm.css";
 import { useTranslation } from "react-i18next"
 
 const AddToCartForm = ({ isOnStock, availableQuantity }) => {

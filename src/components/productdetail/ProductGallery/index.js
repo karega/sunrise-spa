@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductGallery.scss"
+import "./ProductGallery.css"
 const ProductGallery = ({ quickview }) => {
   const product = JSON.parse(localStorage.getItem('product'));
   const productImage = product.masterData.current.masterVariant.images[0]?.url;

@@ -2,7 +2,7 @@ import React from "react";
 import Breadcrumb from "../../common/Breadcrumb";
 import ProductList from "../ProductList/index";
 import ProductQuickView from "../ProductQuickView";
-import "./PageProductOverview.scss";
+import "./PageProductOverview.css";
 
 const PageProductOverview = () => {
   const [isModal, open] = React.useState(false);

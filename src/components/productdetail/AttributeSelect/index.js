@@ -1,5 +1,5 @@
 import React from "react";
-import "./AttributeSelect.scss"
+import "./AttributeSelect.css"
 const AttributeSelect = ({name, values}) => {
     return (
         <div className="pro-details-size">

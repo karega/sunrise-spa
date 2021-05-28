@@ -1,0 +1,43 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.pro-pagination-style ul li {
+  display: inline-block;
+  margin: 0 4px; }
+  @media only screen and (max-width: 767px) {
+    .pro-pagination-style ul li {
+      margin: 0 2px; } }
+  .pro-pagination-style ul li a {
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    position: relative;
+    background: #fff;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    padding: 9px 10px;
+    line-height: 20px;
+    min-width: 40px;
+    margin: 0 1px;
+    color: #343538; }
+    @media only screen and (max-width: 767px) {
+      .pro-pagination-style ul li a {
+        padding: 9px 7px; } }
+    .pro-pagination-style ul li a:hover {
+      border: 1px solid #343538; }
+    .pro-pagination-style ul li a.active {
+      background-color: #fdbb41;
+      color: #fff; }
+    .pro-pagination-style ul li a.next {
+      border-radius: 0; }
+      .pro-pagination-style ul li a.next:hover {
+        border-radius: 0; }
+@media only screen and (max-width: 767px) {
+  .pro-pagination-style.mt-25 {
+    margin-top: 0px; }
+  .pro-pagination-style.mt-15 {
+    margin-top: 0px; } }
+
+/*# sourceMappingURL=Pagination.css.map */

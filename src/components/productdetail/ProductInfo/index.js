@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductInfo.scss"
+import "./ProductInfo.css"
 import ProductGallery from '../ProductGallery';
 import DetailsSection from '../DetailsSection';
 import AddToCartForm from '../AddToCartForm';

@@ -1,0 +1,165 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.breadcrumb-area {
+  padding: 30px 0; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .breadcrumb-area.mt-175 {
+      margin-top: 0; } }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-area.mt-175 {
+      margin-top: 0; } }
+  .breadcrumb-area.breadcrumb-height-2 {
+    padding: 120px 0 120px; }
+    @media only screen and (max-width: 767px) {
+      .breadcrumb-area.breadcrumb-height-2 {
+        padding: 50px 0 50px; } }
+
+.breadcrumb-content {
+  position: relative;
+  z-index: 9; }
+  .breadcrumb-content .breadcrumb-title {
+    margin: 0 0 10px; }
+    @media only screen and (max-width: 767px) {
+      .breadcrumb-content .breadcrumb-title {
+        margin: 0 0 10px; } }
+    .breadcrumb-content .breadcrumb-title h2 {
+      font-size: 36px;
+      margin: 0;
+      font-weight: bold; }
+      @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .breadcrumb-content .breadcrumb-title h2 {
+          font-size: 30px; } }
+      @media only screen and (max-width: 767px) {
+        .breadcrumb-content .breadcrumb-title h2 {
+          font-size: 25px; } }
+  .breadcrumb-content ul li {
+    display: inline-block;
+    margin: 0 18px 0 0;
+    text-transform: capitalize;
+    color: #989898;
+    position: relative; }
+    .breadcrumb-content ul li::before {
+      position: absolute;
+      width: 13px;
+      height: 1px;
+      background-color: #989898;
+      content: '';
+      right: -17px;
+      top: 13px;
+      z-index: 99;
+      transform: rotate(115deg); }
+    .breadcrumb-content ul li:last-child::before {
+      display: none; }
+    .breadcrumb-content ul li a {
+      text-transform: capitalize;
+      color: #989898; }
+      .breadcrumb-content ul li a:hover {
+        color: #fdbb41; }
+  .breadcrumb-content.breadcrumb-content-white .breadcrumb-title h2 {
+    color: #fff; }
+  .breadcrumb-content.breadcrumb-content-white ul li {
+    color: #fff; }
+    .breadcrumb-content.breadcrumb-content-white ul li::before {
+      background-color: #fff; }
+    .breadcrumb-content.breadcrumb-content-white ul li a {
+      color: #fff; }
+      .breadcrumb-content.breadcrumb-content-white ul li a:hover {
+        color: #fdbb41; }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .breadcrumb-content.mb-35 {
+      margin-bottom: 15px; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .breadcrumb-content.mb-35 {
+      margin-bottom: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-content.mb-35 {
+      margin-bottom: 15px; } }
+
+.breadcrumb-area-2 {
+  padding: 120px 0 28px; }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .breadcrumb-area-2.mt-175 {
+      margin-top: 0; } }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-area-2 {
+      padding: 48px 0 45px; }
+      .breadcrumb-area-2.mt-175 {
+        margin-top: 0; } }
+
+.breadcrumb-content-2 .breadcrumb-title-2 {
+  margin: 0 0 90px; }
+  @media only screen and (max-width: 767px) {
+    .breadcrumb-content-2 .breadcrumb-title-2 {
+      margin: 0 0 20px; } }
+  .breadcrumb-content-2 .breadcrumb-title-2 h2 {
+    font-size: 72px;
+    color: #fff;
+    margin: 0 0 24px;
+    font-family: "Playfair Display", serif;
+    line-height: 63px; }
+    @media only screen and (max-width: 767px) {
+      .breadcrumb-content-2 .breadcrumb-title-2 h2 {
+        font-size: 40px;
+        margin: 0 0 15px;
+        line-height: 35px; } }
+  .breadcrumb-content-2 .breadcrumb-title-2 p {
+    font-size: 18px;
+    color: #fff;
+    margin: 0 auto;
+    font-family: "Playfair Display", serif;
+    width: 54%; }
+    @media only screen and (min-width: 992px) and (max-width: 1199px) {
+      .breadcrumb-content-2 .breadcrumb-title-2 p {
+        width: 64%; } }
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .breadcrumb-content-2 .breadcrumb-title-2 p {
+        width: 84%; } }
+    @media only screen and (max-width: 767px) {
+      .breadcrumb-content-2 .breadcrumb-title-2 p {
+        width: 98%; } }
+.breadcrumb-content-2 ul li {
+  display: inline-block;
+  margin: 0 18px 0 0;
+  text-transform: capitalize;
+  color: #fff;
+  position: relative;
+  font-size: 13px; }
+  .breadcrumb-content-2 ul li::before {
+    position: absolute;
+    width: 13px;
+    height: 1px;
+    background-color: #fff;
+    content: '';
+    right: -17px;
+    top: 13px;
+    z-index: 99;
+    transform: rotate(115deg); }
+  .breadcrumb-content-2 ul li:last-child::before {
+    display: none; }
+  .breadcrumb-content-2 ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 13px; }
+    .breadcrumb-content-2 ul li a:hover {
+      color: #fdbb41; }
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .breadcrumb-area.breadcrumb-bg-3.pt-200 {
+    padding-top: 120px; }
+  .breadcrumb-area.breadcrumb-bg-3.pb-120 {
+    padding-bottom: 80px; } }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .breadcrumb-area.pt-200 {
+    padding-top: 75px; }
+  .breadcrumb-area.pb-120 {
+    padding-bottom: 80px; } }
+@media only screen and (max-width: 767px) {
+  .breadcrumb-area.pt-200 {
+    padding-top: 55px; }
+  .breadcrumb-area.pb-120 {
+    padding-bottom: 60px; } }
+
+/*# sourceMappingURL=Breadcrumb.css.map */

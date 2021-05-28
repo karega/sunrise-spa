@@ -1,0 +1,83 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.thankyou-page-title {
+  font-size: 24px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 24px 0 14px; }
+
+.thankyou-page-content {
+  background-color: #ffffff;
+  padding: 14px;
+  border: 1px solid #D6D6D6;
+  margin-bottom: 28px; }
+
+.thankyou-confirmation .thankyou-email {
+  color: #6989C2; }
+
+.print-receipt-btn {
+  color: #858585;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: 1px solid #858585;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  .print-receipt-btn:hover {
+    color: #333333;
+    border: 1px solid #333333; }
+
+.thankyou-buttons {
+  padding: 1em 0 0 0; }
+
+.thankyou-continue-shopping-btn {
+  background: #FFBA27;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px 20px;
+  letter-spacing: 1px; }
+  .thankyou-continue-shopping-btn:hover {
+    background: #ffc241; }
+
+.order-details-title {
+  text-transform: uppercase;
+  border-bottom: 1px solid #D6D6D6;
+  padding: 14px 0;
+  letter-spacing: 1px;
+  font-size: 1.1em; }
+
+.order-number-date {
+  padding: 12px 0;
+  color: #858585; }
+  .order-number-date span {
+    display: inline-block; }
+  .order-number-date .number-date-title {
+    padding-right: 14px; }
+
+.thankyou-order-summary {
+  margin: -14px; }
+  .thankyou-order-summary .cart-item-name {
+    font-size: 16px; }
+  .thankyou-order-summary .cart-attributes {
+    font-size: 14px; }
+  .thankyou-order-summary .quantity-number {
+    font-size: 14px; }
+
+@media screen and (max-width: 414px) {
+  .print-receipt-btn {
+    margin: 24px 0;
+    width: 100%; }
+
+  .thankyou-buttons li {
+    width: 100%; }
+
+  .thankyou-continue-shopping-btn {
+    width: 100%;
+    display: block;
+    text-align: center; } }
+
+/*# sourceMappingURL=_checkout-thankyou.css.map */

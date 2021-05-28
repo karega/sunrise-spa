@@ -1,0 +1,70 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.signup-box-wrapper {
+  background: #ffffff;
+  border: 1px solid #D6D6D6;
+  padding: 20px; }
+  .signup-box-wrapper .selectboxit-btn {
+    background: transparent url("../img/arrow-67-filled.png") no-repeat 95% 50%;
+    background-size: 12px;
+    border: solid 1px #D6D6D6; }
+
+.signup-box-title {
+  text-transform: uppercase;
+  font-size: 18px; }
+
+.signup-box-required {
+  color: #858585; }
+
+.signup-box-hr {
+  margin: 10px 0;
+  border-top: 1px solid #D6D6D6; }
+
+.signup-box-description {
+  padding: 20px 0 30px; }
+
+.signup-box-input span {
+  display: inline-block; }
+.signup-box-input input {
+  width: 100%;
+  padding: 5px 10px; }
+
+.signup-box-newsletter {
+  margin-top: 40px; }
+  .signup-box-newsletter input {
+    float: left;
+    margin-right: 5px; }
+  .signup-box-newsletter a {
+    color: #858585;
+    text-decoration: underline; }
+
+.signup-box-terms {
+  margin-top: 5px; }
+  .signup-box-terms input {
+    float: left;
+    margin-right: 5px; }
+  .signup-box-terms a {
+    color: #858585;
+    text-decoration: underline; }
+
+.signup-box-policy {
+  margin-top: 5px; }
+  .signup-box-policy a {
+    color: #858585;
+    text-decoration: underline; }
+
+.signup-register-btn {
+  background-color: #FFBA27;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px; }
+  .signup-register-btn:hover {
+    background-color: #ffc241; }
+
+/*# sourceMappingURL=_signup-box.css.map */

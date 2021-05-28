@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,+EAA+E;AAC/E;;;+EAG+E;ACF/E,cAAe;EACb,OAAO,EAAE,MAAM;EACf,SAAS,EAAE,IAAI;EACf,cAAc,EAAE,SAAS;EACzB,cAAc,EAAE,GAAG;EACnB,WAAW,EAAE,GAAG;;AAElB,gBAAiB;EACf,OAAO,EAAE,eAAe;EACxB,MAAM,EAAE,iBAAe;EACvB,gBAAgB,ED0CV,OAAO;ECzCb,aAAa,EAAE,IAAI",
+"sources": ["../scss/_global.scss","../scss/_imprint.scss"],
+"names": [],
+"file": "_imprint.css"
+}

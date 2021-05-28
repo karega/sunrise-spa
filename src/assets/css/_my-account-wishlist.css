@@ -1,0 +1,78 @@
+/*****************************************************************************/
+/*
+/* COLORS
+/*
+/*****************************************************************************/
+.my-account-wishlist-items-number {
+  text-transform: none;
+  color: #6989C2; }
+  @media screen and (max-width: 767px) {
+    .my-account-wishlist-items-number {
+      display: block;
+      margin-top: 10px; } }
+
+@media screen and (max-width: 767px) {
+  .my-account-wishlist-items-wrapper {
+    padding-top: 30px; } }
+
+.my-account-wishlist-pagination {
+  margin: 20px 0 50px 0; }
+
+.my-account-wishlist-clear button {
+  color: #858585;
+  text-decoration: underline;
+  padding: 0;
+  letter-spacing: 1px; }
+
+.my-account-wishlist-per-page {
+  text-align: right; }
+  .my-account-wishlist-per-page .wishlist-display-selector-title {
+    display: inline-block;
+    padding: 10px 10px 0; }
+  .my-account-wishlist-per-page .selectboxit-btn {
+    background: transparent url("../img/arrow-67-filled.png") no-repeat 95% 50%;
+    background-size: 12px;
+    border: solid 1px #D6D6D6;
+    min-width: 50px; }
+
+.my-account-wishlist-remove-btn {
+  margin-bottom: 20px; }
+  @media screen and (max-width: 767px) {
+    .my-account-wishlist-remove-btn {
+      text-align: center; } }
+  .my-account-wishlist-remove-btn button {
+    color: #ADADAD;
+    border: 2px solid #ADADAD;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 3px 20px;
+    letter-spacing: 1px; }
+    .my-account-wishlist-remove-btn button:hover {
+      color: #858585;
+      border-color: #858585; }
+
+.my-account-wishlist-pagination-bottom {
+  padding: 30px 0 50px 0;
+  border-bottom: 1px solid #D6D6D6; }
+
+.my-account-wishlist-clear-btn {
+  margin-top: 20px; }
+  @media screen and (max-width: 767px) {
+    .my-account-wishlist-clear-btn {
+      margin: 10px 0; } }
+  .my-account-wishlist-clear-btn button {
+    color: #ADADAD;
+    border: 2px solid #ADADAD;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 3px 20px;
+    letter-spacing: 1px; }
+    .my-account-wishlist-clear-btn button:hover {
+      color: #858585;
+      border-color: #858585; }
+
+@media screen and (max-width: 767px) {
+  .my-account-wishlist-item-wrapper {
+    margin-top: 20px; } }
+
+/*# sourceMappingURL=_my-account-wishlist.css.map */
